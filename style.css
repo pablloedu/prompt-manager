@@ -230,3 +230,67 @@ button {
   margin-top: 8px;
   border-bottom: 0.5px solid var(--cores-gray-700);
 }
+
+.prompt-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.prompt-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.prompt-item-main {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+  flex: 1;
+}
+
+.prompt-item-title {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--cores-white);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.prompt-item-description {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--cores-gray-100);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-icon {
+  padding: 6px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.btn-icon:hover {
+  background: rgba(255, 0, 0, 0.03);
+}
+
+.icon-trash {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
