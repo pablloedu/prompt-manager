@@ -159,7 +159,7 @@ button {
   position: absolute;
   top: 62px;
   left: 62px;
-  /* display: none; */
+  display: none;
 }
 
 .sidebar {
@@ -293,4 +293,32 @@ button {
   width: 20px;
   height: 20px;
   display: block;
+}
+
+@media (max-width: 950px) {
+  .open-toggle {
+    display: block;
+    top: 38px;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80%;
+    max-width: 360px;
+    transform: translateX(-100%);
+    z-index: 1100;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .main {
+    padding: 24px 32px;
+    margin-left: 0;
+    overflow-y: auto;
+  }
 }
